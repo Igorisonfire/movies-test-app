@@ -11,7 +11,7 @@ ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
             {/*HashRouter for github pages (BrowserRouter - preferable)*/}
-            <HashRouter basename={process.env.PUBLIC_URL}>
+            <HashRouter basename={'/'}>
                 <App/>
             </HashRouter>
         </Provider>
