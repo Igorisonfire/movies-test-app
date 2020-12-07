@@ -5,14 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import store from "./store";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <BrowserRouter>
+            {/*HashRouter for github pages (BrowserRouter - preferable)*/}
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <App/>
-            </BrowserRouter>
+            </HashRouter>
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
