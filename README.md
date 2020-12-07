@@ -1,4 +1,10 @@
-# Wookie Movies App
+# Movies App
+
+[Start Movies App](https://igorisonfire.github.io/movies-test-app/)
+
+![Movies App](src/images/movies-app.png)
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
