@@ -1,0 +1,27 @@
+.app-header {
+  padding: 12px 0;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    span{
+      text-transform: uppercase;
+      color: #000000;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+}

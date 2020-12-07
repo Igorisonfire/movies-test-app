@@ -1,0 +1,11 @@
+.home-scene{
+
+
+  .rows-container{
+    padding: 48px 0;
+
+    &>*:not(:last-child){
+      padding-bottom: 32px;
+    }
+  }
+}

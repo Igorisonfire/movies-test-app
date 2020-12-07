@@ -1,0 +1,19 @@
+.movie-preview-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  transition: linear 0.1s;
+
+  img{
+    height: 100%;
+  }
+
+  &:hover{
+    transition: linear 0.2s;
+    transform: scale(1.2);
+    z-index: 10;
+  }
+}

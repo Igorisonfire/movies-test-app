@@ -1,0 +1,44 @@
+.stars-bar-component{
+
+  .stars-bar{
+    display: flex;
+
+    .star{
+      min-width: 30px;
+      min-height: 30px;
+      position: relative;
+
+      .clipboard{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      }
+    }
+
+    &.gray{
+      z-index: 1;
+      .star{
+        .clipboard{
+          background-color: gray;
+        }
+      }
+    }
+
+    &.yellow{
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+
+      .star{
+        .clipboard{
+          background-color: orange;
+        }
+      }
+    }
+  }
+}
